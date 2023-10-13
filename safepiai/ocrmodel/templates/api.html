@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI API</title>
+</head>
+<!--결과값 이미지 반환 api 템플릿-->
+<!--/api/ 붙일 시 나타남. 이미지 업로드시 해당 프로젝트 파일에 mdeia/images가 생성되고 저장됨-->
+<body>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
